@@ -15,13 +15,14 @@ import { promises as fs } from 'fs'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
-// console.log("dirname", __dirname)
+console.log('dirname', __dirname)
 
 const files = await glob('**/*.{js,ts,vue}', {
   cwd: path.resolve(__dirname, 'src'),
   absolute: true,
   onlyFiles: true,
 })
+console.log('files', files)
 
 export const cleanDist = async () => {
   const distPath = path.resolve(process.cwd(), 'dist')
@@ -43,7 +44,8 @@ export const elpBuildModules = async (done) => {
         // rollupPluginCompileStyleEntry(),
         vue(),
         dts({
-          entryRoot: resolve(__dirname, 'src'),
+          entryRoot: path.resolve(__dirname, 'src'),
+          include: [path.resolve(__dirname, 'src')],
           outDir: ['dist/es', 'dist/lib'],
           insertTypesEntry: true,
         }),
