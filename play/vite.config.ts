@@ -11,7 +11,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '~/': `${path.resolve(__dirname, 'src')}/`,
-      '@hl-fe-components': path.resolve(__dirname, '../packages/components'),
+      '@zy-ep-ui': path.resolve(__dirname, '../packages/components'),
     },
   },
   css: {
