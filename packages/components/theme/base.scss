@@ -1,0 +1,23 @@
+
+@use './variables' as *;
+
+// 直接使用 Sass 变量，并在根部导出 CSS 变量
+
+// :root {
+//   --hl-color-primary: #{$hl-color-primary}; // 将 Sass 变量值同步到 CSS 变量
+// }
+
+:root {
+  @each $name, $color in $hl-colors {
+    --hl-color-#{$name}: #{$color};
+  }
+  @each $name, $color in $hl-color-texts {
+    --hl-color-text-#{$name}: #{$color};
+  }
+  @each $name, $color in $hl-borders {
+    --hl-border-#{$name}: #{$color};
+  }
+  @each $name, $color in $hl-bg-colors {
+    --hl-bg-color-#{$name}: #{$color};
+  }
+}

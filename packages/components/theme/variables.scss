@@ -1,0 +1,69 @@
+// 这个文件用于生成最终的主题 :root{}
+@use "sass:color";
+
+// 颜色基础值
+$color-white: #ffffff !default;
+$color-black: #000000 !default;
+
+// 主色
+$hl-color-primary: #409eff !default;
+$hl-color-primary-light-1: color.adjust($hl-color-primary, $lightness: 10%) !default;
+$hl-color-primary-light-2: color.adjust($hl-color-primary, $lightness: 20%) !default;
+$hl-color-primary-light-3: color.adjust($hl-color-primary, $lightness: 30%) !default;
+
+// 状态色
+$hl-color-success: #67c23a !default;
+$hl-color-warning: #e6a23c !default;
+$hl-color-danger: #f56c6c !default;
+$hl-color-info: #909399 !default;
+
+
+// 用 map 来统一管理颜色变量,方便后面遍历放到  root中
+$hl-colors: (
+  'primary': $hl-color-primary,
+  'success': $hl-color-success,
+  'warning': $hl-color-warning,
+  'info': $hl-color-info,
+  'light-1': $hl-color-primary-light-1,
+  'light-2': $hl-color-primary-light-2,
+  'light-3': $hl-color-primary-light-3,
+);
+
+// 文本色
+$hl-color-text-primary: #303133 !default;
+$hl-color-text-regular: #606266 !default;
+$hl-color-text-secondary: #909399 !default;
+$hl-color-text-placeholder: #c0c4cc !default;
+
+$hl-color-texts: (
+  'primary': $hl-color-primary,
+  'regular': $hl-color-text-regular,
+  'secondary': $hl-color-text-secondary,
+  'placeholder': $hl-color-text-placeholder,
+);
+
+// 边框色
+$hl-border-color: #dcdfe6 !default;
+$hl-border-color-light: #e4e7ed !default;
+$hl-border-color-lighter: #ebeef5 !default;
+
+$hl-borders: (
+  'color': $hl-border-color,
+  'light': $hl-border-color-light,
+  'lighter': $hl-border-color-lighter,
+);
+
+// 背景色
+$hl-bg-color-page: #f2f3f5 !default;
+$hl-bg-color-container: #ffffff !default;
+$hl-bg-color-hover: #f5f7fa !default;
+$hl-bg-color-disabled: #f5f7fa !default;
+$hl-bg-colors: (
+  'page': $hl-bg-color-page,
+  'container': $hl-bg-color-container,
+  'hover': $hl-bg-color-hover,
+  'disabled': $hl-bg-color-disabled,
+);
+
+
+
