@@ -1,2 +1,2 @@
-import '@healthlink/components/theme/base.scss'
-import '@healthlink/components/theme/hl-cropping.scss'
+import 'zy-ep-ui/theme/base.scss'
+import 'zy-ep-ui/theme/hl-cropping.scss'

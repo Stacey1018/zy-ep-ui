@@ -23,7 +23,7 @@ pnpm install xxx
 
 ### 1. 完整引入
 
-`hl-fe-components` 将会在 Vue 应用中进行**全局组件注册**。
+`zy-ep-ui` 将会在 Vue 应用中进行**全局组件注册**。
 
 ```js
 // main.js
@@ -32,8 +32,8 @@ import "./style.css"
 import App from "./App.vue"
 import router from "./router"
 
-import HlFeComponent from "@healthlink/components"
-import "@healthlink/components/dist/es/component.css" // 引入组件库的样式
+import HlFeComponent from "zy-ep-ui"
+import "zy-ep-ui/dist/es/component.css" // 引入组件库的样式
 import "element-plus/theme-chalk/src/index.scss" // 引入element-ui的样式
 
 const app = createApp(App)
@@ -53,12 +53,12 @@ import vue from "@vitejs/plugin-vue"
 import Components from "unplugin-vue-components/vite"
 import AutoImport from "unplugin-auto-import/vite"
 import { ElementPlusResolver } from "unplugin-vue-components/resolvers"
-import { HlElementResolver } from "@healthlink/components"
+import { HlElementResolver } from "zy-ep-ui"
 
 // https://vite.dev/config/
 export default defineConfig({
   optimizeDeps: {
-    include: ["element-plus", "@healthlink/components"],
+    include: ["element-plus", "zy-ep-ui"],
   },
   plugins: [
     vue(),
@@ -86,7 +86,7 @@ import './style.css'
 import App from './App.vue'
 import router from './router'
 
-import '@healthlink/components/dist/es/component.css' // 引入组件库的样式
+import 'zy-ep-ui/dist/es/component.css' // 引入组件库的样式
 import 'element-plus/theme-chalk/src/index.scss'
 
 const app = createApp(App)

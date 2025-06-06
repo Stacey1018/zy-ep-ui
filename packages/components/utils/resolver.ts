@@ -20,8 +20,8 @@ export function HlElementResolver() {
         const kebabName = toKebabCase(componentName)
         return {
           name: componentName, // 组件名
-          from: '@healthlink/components', // 组件库名称
-          sideEffects: [`@healthlink/components/dist/es/${kebabName}/style/index`], // 组件样式文件
+          from: 'zy-ep-ui', // 组件库名称
+          sideEffects: [`zy-ep-ui/dist/es/${kebabName}/style/index`], // 组件样式文件
         }
       }
     },

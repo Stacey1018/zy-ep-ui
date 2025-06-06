@@ -1,5 +1,5 @@
 {
-  "name": "@healthlink/components",
+  "name": "zy-ep-ui",
   "type": "module",
   "version": "1.0.0",
   "description": "",
@@ -21,7 +21,6 @@
     "./css": "./dist/es/components.css",
     "./theme/*": "./dist/theme/*",
     "./dist/*": "./dist/*"
-    
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

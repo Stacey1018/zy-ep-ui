@@ -57,15 +57,15 @@ export const elpBuildModules = async (done) => {
       ],
       resolve: {
         alias: {
-          '@healthlink/components': path.resolve(__dirname),
+          'zy-ep-ui': path.resolve(__dirname),
         },
       },
       build: {
         lib: {
           // entry: resolve(__dirname, "packages/index.ts"),
           entry: files,
-          name: 'hl-fe-components',
-          fileName: (format) => `hl-fe-components.${format}.js`,
+          name: 'zy-ep-ui',
+          fileName: (format) => `zy-ep-ui.${format}.js`,
           formats: ['es', 'cjs', 'umd'],
         },
         minify: 'false', // 默认就是 esbuild，可省略

@@ -1,5 +1,5 @@
 export function rollupPluginCompileStyleEntry() {
-  const themeEntryPrefix = `@healthlink/components`
+  const themeEntryPrefix = `zy-ep-ui`
   return {
     name: 'rollup-plugin-compile-style-entry',
 

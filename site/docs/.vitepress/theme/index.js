@@ -6,8 +6,8 @@
 // 在 `docs/.vitepress/theme/index.ts` 中配置：
 
 import DefaultTheme from 'vitepress/theme'
-import HlFeComponent from '@healthlink/components' // 按需加载或全量导入组件
-import '@healthlink/components/css' // 按需加载或全量导入组件
+import HlFeComponent from 'zy-ep-ui' // 按需加载或全量导入组件
+import 'zy-ep-ui/css' // 按需加载或全量导入组件
 import 'element-plus/theme-chalk/src/index.scss'
 import ElementPlus from 'element-plus'
 
