@@ -26,6 +26,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp"
   },
+  "peerDependencies": {
+    "element-plus": "^2.9.8",
+    "vue-advanced-cropper": "^2.8.9",
+    "pdfjs-dist": "^3.11.174"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
