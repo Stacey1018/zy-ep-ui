@@ -3,7 +3,7 @@ import vue from '@vitejs/plugin-vue'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
-// import { HlElementResolver } from '@healthlink/components'
+// import { HlElementResolver } from zy-ep-ui''
 import path from 'node:path'
 
 // https://vite.dev/config/
@@ -17,9 +17,9 @@ export default defineConfig({
   css: {
     preprocessorOptions: {
       scss: {
-        // additionalData: `@use "~/styles/hl/index.scss" as vars;@use "@healthlink/components/theme/element-theme.scss" as *;`,
+        // additionalData: `@use "~/styles/hl/index.scss" as vars;@use "zy-ep-ui/theme/element-theme.scss" as *;`,
         additionalData: `@use "~/styles/hl/index.scss" as vars;`,
-        // additionalData: `@use "@healthlink/components/theme/element-theme.scss" as *;`,
+        // additionalData: `@use "zy-ep-ui/theme/element-theme.scss" as *;`,
       },
     },
   },

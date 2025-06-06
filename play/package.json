@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@healthlink/components": "workspace:^",
+    "zy-ep-ui": "workspace:^",
     "element-plus": "^2.9.9",
     "sass": "^1.87.0",
     "vue": "^3.5.13",
