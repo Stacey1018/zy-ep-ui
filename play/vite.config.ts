@@ -3,7 +3,7 @@ import vue from '@vitejs/plugin-vue'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
-// import { HlElementResolver } from zy-ep-ui''
+import { HlElementResolver } from 'zy-ep-ui'
 import path from 'node:path'
 
 // https://vite.dev/config/
@@ -37,7 +37,7 @@ export default defineConfig({
     vue(),
     Components({
       resolvers: [
-        // HlElementResolver(),
+        HlElementResolver(),
         ElementPlusResolver({
           importStyle: 'sass',
         }),

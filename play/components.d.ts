@@ -16,6 +16,7 @@ declare module 'vue' {
     HlBaseButton: typeof import('zy-ep-ui')['HlBaseButton']
     HlButton: typeof import('zy-ep-ui')['HlButton']
     HlCropping: typeof import('./src/components/HlCropping.vue')['default']
+    HlPdfViewer: typeof import('zy-ep-ui')['HlPdfViewer']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     Src: typeof import('./src/components/hl-cropping/src/index.vue')['default']

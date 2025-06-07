@@ -16,10 +16,10 @@
 </template>
 
 <script setup lang="ts">
+import { ElIcon } from 'element-plus'
 import { Download, Plus, Minus } from '@element-plus/icons-vue'
 import * as pdfjsLib from 'pdfjs-dist'
 import workerSrc from 'pdfjs-dist/build/pdf.worker.js'
-import 'pdfjs-dist/web/pdf_viewer.css'
 
 import { ref, watch, nextTick } from 'vue'
 
@@ -206,71 +206,3 @@ watch(
   { immediate: true }
 )
 </script>
-
-<style scoped lang="scss">
-.hl-pdf-viewer {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
-.hl-pdf-toolbar {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  background-color: #303133;
-  height: 36px;
-  color: #fff;
-
-  .hl-pdf-toolbar-zoom {
-    display: flex;
-    align-items: center;
-
-    .zoom-btn {
-      cursor: pointer;
-    }
-    span {
-      min-width: 60px;
-      text-align: center;
-      font-weight: 600;
-      font-size: 14px;
-    }
-  }
-  .hl-pdf-toolbar-download {
-    display: flex;
-    align-items: center;
-    padding-right: 20px;
-    .download-btn {
-      font-size: 20px;
-      color: #fff;
-      cursor: pointer;
-    }
-  }
-}
-
-.hl-pdf-container {
-  width: 100%;
-  overflow: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #0a0a0ac9;
-  flex: 1;
-}
-.pdf-page-wrapper {
-  position: relative;
-  margin-bottom: 16px;
-}
-.textLayer {
-  font-family: sans-serif;
-  line-height: 1;
-  color: transparent;
-  user-select: text;
-  -webkit-user-select: text;
-  word-wrap: break-word;
-  white-space: pre;
-}
-</style>
